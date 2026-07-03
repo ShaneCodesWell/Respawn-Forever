@@ -13,6 +13,14 @@ return new class extends Migration
     {
         Schema::create('blog_posts', function (Blueprint $table) {
             $table->id();
+            $table->string('title');
+            $table->string('slug')->unique(); // used in the URL: /blog/{slug}
+            $table->text('excerpt')->nullable();   // short description for cards
+            $table->longText('body');               // the full article
+            $table->string('tag');                  // "Opinion", "Hot Take", "Process", etc.
+            $table->string('featured_image')->nullable(); // storage path
+            $table->boolean('is_featured')->default(false); // controls the big card at top of index
+            $table->timestamp('published_at')->nullable();
             $table->timestamps();
         });
     }
