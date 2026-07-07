@@ -1,6 +1,6 @@
 <header>
     <nav class="nav">
-        <a href="#" class="logo"><span class="logo-mark"></span>Respawn Forever</a>
+        <a href="{{ route('home') }}" class="logo"><span class="logo-mark"></span>Respawn Forever</a>
         <span class="network-tag">Part of the <a href="#network">Shane Forever</a> network</span>
         <div class="nav-links">
             <a href="#videos">Videos</a>

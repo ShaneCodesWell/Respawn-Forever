@@ -195,7 +195,7 @@
                 </a>
             </div>
             <div class="debrief-cta reveal">
-                <a href="blog.html" class="btn btn-ghost">Read All Posts</a>
+                <a href="{{ route('blog.index') }}" class="btn btn-ghost">Read All Posts</a>
             </div>
         </div>
     </section>
@@ -253,7 +253,7 @@
                         Online</h2>
                     <p style="color:var(--muted); max-width:420px; margin-bottom:26px;">Thumbnail packs, overlays, and
                         a few things I've designed for the channel — live now and ready to grab.</p>
-                    <a href="#shop" class="btn btn-primary">Browse Shop</a>
+                    <a href="{{ route('shop.index') }}" class="btn btn-primary">Browse Shop</a>
                 </div>
                 <div class="shop-visual">
                     <div class="icon"></div>

@@ -13,7 +13,7 @@ class ShopController extends Controller
         $products = Product::where('is_active', true)
             ->latest()
             ->get();
- 
+
         return view('shop.index', compact('products'));
     }
 }

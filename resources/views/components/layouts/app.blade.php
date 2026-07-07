@@ -1,3 +1,4 @@
+@props(['active' => null])
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,11 +17,11 @@
 
 <body>
     <div class="scanlines"></div>
-    <x-nav-bar />
+    <x-nav-bar :active="$active" />
     <main>
         {{ $slot }}
     </main>
-    <x-footer />
+    <x-footer :active="$active" />
 </body>
 
 </html>
